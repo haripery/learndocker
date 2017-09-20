@@ -55,5 +55,5 @@ Stable - released quarterly
 
 ###Using the first container
 
-docker command
-docker command subcommand options
+###docker command
+docker [command] [subcommand] [options]
