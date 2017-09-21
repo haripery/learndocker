@@ -57,3 +57,5 @@ Stable - released quarterly
 
 ###docker command
 docker [command] [subcommand] [options]
+
+shortcut extension has been added
