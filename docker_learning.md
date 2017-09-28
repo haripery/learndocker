@@ -73,5 +73,8 @@ Docker default image is registry is called the Docker Hub
 ###First Container example commands
 docker container run --publish 80:80 --detach nginx
 docker container ls -a
-docker container stop 630
-docker container run --publish 80:80 --detach --name webhost nginx
+docker container stop [container unique ID]
+docker container run --publish 80:80 --detach --name [container name] nginx
+docker container logs [container name]
+docker container rm [container]
+docker container rm -f [container number]
