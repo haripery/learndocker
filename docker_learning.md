@@ -59,3 +59,19 @@ Stable - released quarterly
 docker [command] [subcommand] [options]
 
 shortcut extension has been added
+
+###Using the first container
+docker command
+docker command subcommand options
+
+####Image vs Container
+Image is the application we want to Routing
+Container is an instance of that image running as a Process
+you can have many containers running off the same image
+Docker default image is registry is called the Docker Hub
+
+###First Container example commands
+docker container run --publish 80:80 --detach nginx
+docker container ls -a
+docker container stop 630
+docker container run --publish 80:80 --detach --name webhost nginx
