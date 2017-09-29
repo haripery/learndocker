@@ -78,3 +78,11 @@ docker container run --publish 80:80 --detach --name [container name] nginx
 docker container logs [container name]
 docker container rm [container]
 docker container rm -f [container number]
+
+#Assignment : Run Multiple dockers:
+docker container run -d -p 3306:3306 --name db -e MYSQL_RANDOM_ROOT_PASSWORD=yes mysql #mysql image
+docker container run -d -p 8080:80 httpd #apache server
+docker container run -d --name proxy -p 80:80 nginx #nginx server
+
+##remove images
+docker container rm -f db proxy ddd #remove all the containers
