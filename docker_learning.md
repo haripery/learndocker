@@ -83,6 +83,21 @@ docker container rm -f [container number]
 docker container run -d -p 3306:3306 --name db -e MYSQL_RANDOM_ROOT_PASSWORD=yes mysql #mysql image
 docker container run -d -p 8080:80 httpd #apache server
 docker container run -d --name proxy -p 80:80 nginx #nginx server
-
 ##remove images
 docker container rm -f db proxy ddd #remove all the containers
+
+###what happening inside the container
+docker container top mysql
+docker container inspect mysql
+
+###Getting the shell inside the container
+docker container run -it -> start new container interactively
+docker container exec -it -> run additional command in existing container
+
+docker container run -it --name proxy nginx bash
+ls -al
+exit
+
+docker container start -ai ubuntu - start the container again in the interactive mode
+
+docker container exec -it mysql bash - enter into the already running container with the interactive mode
